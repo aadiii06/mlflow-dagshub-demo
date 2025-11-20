@@ -50,6 +50,6 @@ with mlflow.start_run():
     
     mlflow.log_artifact(__file__)
     
-    mlflow.sklearn.log_model(rf, "decision_tree_model")
+    mlflow.sklearn.log_model(rf, artifact_path="model")
     
     print(f"Model accuracy: {accuracy}")
