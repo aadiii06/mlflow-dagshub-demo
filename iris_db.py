@@ -10,7 +10,7 @@ import seaborn as sns
 import dagshub
 dagshub.init(repo_owner='aadiii06', repo_name='mlflow-dagshub-demo', mlflow=True)
 
-mlflow.set_tracking_uri("https://github.com/aadiii06/mlflow-dagshub-demo.git")
+mlflow.set_tracking_uri("https://dagshub.com/aadiii06/mlflow-dagshub-demo.mlflow")
 
 # load dataset
 data = load_iris()
