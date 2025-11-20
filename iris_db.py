@@ -24,7 +24,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 max_depth = 10
 
 # apply mlfow
-mlflow.set_experiment("iris_db")
 with mlflow.start_run():
     
     rf = DecisionTreeClassifier(max_depth=max_depth)
